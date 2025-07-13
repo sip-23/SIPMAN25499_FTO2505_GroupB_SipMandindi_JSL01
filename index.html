@@ -8,19 +8,20 @@
     <title>My KanBan Tracker</title>
   </head>
 
-  <body>
+  <body class="xl:flex">
     <!-- This element will be 100vh tall: element exactly as tall as the visible browser window | 1vh = 1% of the viewport height, so 100vh = full height -->
-    <div class="xl:h-screen xl:flex w-[375px]">
-      <div class="bg-white w-[375px] xl:w-[300px] xl:border-r px-8 py-4">
-        <img class="h-[24px] w-[112px] xl:h-[40px] xl:w-[260px]" src="https://raw.githubusercontent.com/CodeSpace-Academy/JSL01-2025/6f88031913c1c439221f03a3afbbad251bd5e0eb/assets/logo-light.svg" alt="Kanban logo"/>
+    <div class="xl:h-full w-[375px]">
+      <div class="xl:flex xl:flex-col bg-white w-[375px] xl:w-[300px] xl:h-screen xl:border-r px-8 py-4">
+        <img class="xl: block h-[24px] w-[112px] xl:h-[40px] xl:w-[260px]" src="https://raw.githubusercontent.com/CodeSpace-Academy/JSL01-2025/6f88031913c1c439221f03a3afbbad251bd5e0eb/assets/logo-light.svg" alt="Kanban logo"/>
         <!-- Navigation Sidebar: Contains the logo, navigation links for boards, and theme toggle. -->
-        <nav class="hidden xl:mt-8">
+        <nav class="hidden xl:flex xl:flex-col xl:mt-8">
           <div class="hidden xl:flex xl:justify-between xl:items-center xl:mt-2 xl:font-plus-jakarta-sans xl:text-[#828FA3] xl:font-bold xl:not-italic xl:text-xs xl:leading-[100%] xl:tracking-[2.4px]">
-            <h4>ALL BOARDS</h4>
+            <h4 class="xl:mr-2">ALL BOARDS</h4>
             <span>(1)</span>
           </div>
-          <div class="hidden xl:-mx-8 xl:font-plus-jakarta-sans xl:text-white xl:font-bold xl:not-italic xl:text-[15px] xl:leading-[100%] xl:tracking-[0px]">
-            <button class="hidden xl:w-[276px] xl:h-[48px] xl:mb-2 xl:rotate-0 xl:opacity-100 xl:relative xl:top-[34px] xl:rounded-r-[100px] xl:bg-[#635FC7]">Launch Career</button>
+          <!-- Adding a button -->
+          <div class="hidden xl:flex xl:-mx-8 xl:font-plus-jakarta-sans xl:text-white xl:font-bold xl:not-italic xl:text-[15px] xl:leading-[100%] xl:tracking-[0px]">
+            <button class="hidden xl:flex xl:py-4 xl:px-6 xl:w-[276px] xl:h-[48px] xl:mb-2 xl:rotate-0 xl:opacity-100 xl:relative xl:top-[34px] xl:rounded-r-[100px] xl:bg-[#635FC7]">Launch Career</button>
           </div>
         </nav>
       </div>
@@ -28,7 +29,7 @@
 
     <!-- Main Layout: Header with board title, add task button, and main content area for task columns. -->
     <!-- Create the top Header Layer -->
-    <div class="hidden xl:flex-1 xl:min-w-0 xl:bg-white xl:h-[96px] xl:max-w-[1140px]">
+    <div class="hidden xl:flex xl:min-w-0 xl:bg-white xl:h-[96px] xl:max-w-[1140px]">
       <div class="hidden xl:border-b-2 xl:border-gray-200">
         <header class="hidden xl:px-6">
           <div class="hidden xl:flex xl:justify-between xl:items-center xl:border-b xl:border-gray-200 ">

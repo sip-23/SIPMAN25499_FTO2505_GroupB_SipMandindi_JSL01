@@ -39,22 +39,22 @@
 
     <!-- Main Layout: Header with board title, add task button, and main content area for task columns. -->
     <!-- Create the top Header Layer -->
-    <div class="hidden xl:flex xl:min-w-0 xl:bg-white xl:h-[96px] xl:max-w-[1140px]">
-      <div class="hidden xl:border-b-2 xl:border-gray-200">
-        <header class="hidden xl:px-6">
-          <div class="hidden xl:flex xl:justify-between xl:items-center xl:border-b xl:border-gray-200 ">
-            <h2>Launch Career</h2>
-          </div>
-          <!-- Add Task sections -->
-          <div class="my-4 sm:hidden">
-            <button class="hidden xl:flex xl:items-center xl:text-sm xl:font-medium xl:text-gray-500 xl:bg-[#A8A4FF] xl:text-white xl:w-[164px] xl:h-[48px] xl:rounded-[50px]">
-              <svg class="h-4 w-4 ml-4" clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m11 11h-7.25c-.414 0-.75.336-.75.75s.336.75.75.75h7.25v7.25c0 .414.336.75.75.75s.75-.336.75-.75v-7.25h7.25c.414 0 .75-.336.75-.75s-.336-.75-.75-.75h-7.25v-7.25c0-.414-.336-.75-.75-.75s-.75.336-.75.75z" fill-rule="nonzero"/></svg>
-              <span class="ml-2">Add New Task</span>
-            </button>
-          </div>
-        </header>
-      </div>
-    </div>
+    <div class="flex-1 flex flex-col overflow-hidden">
+      <!-- Header -->
+      <header class="hidden xl:block bg-white border-b border-[#E4EBFA] p-6">
+        <div class="flex justify-between items-center">
+          <h2 class="font-plus-jakarta-sans font-bold text-2xl">Launch Career</h2>
+          
+          <!-- Add Task Button - Now properly visible -->
+          <!-- <button class="flex items-center justify-center bg-purple-500 hover:bg-purple-600 text-white font-medium py-3 px-4 rounded-full transition-colors">
+            <svg class="h-4 w-4 text-white" clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path d="m11 11h-7.25c-.414 0-.75.336-.75.75s.336.75.75.75h7.25v7.25c0 .414.336.75.75.75s.75-.336.75-.75v-7.25h7.25c.414 0 .75-.336.75-.75s-.336-.75-.75-.75h-7.25v-7.25c0-.414-.336-.75-.75-.75s-.75.336-.75.75z" fill="currentColor"/>
+            </svg>
+            <span class="ml-2">Add New Task</span>
+            </button> -->
+        </div>
+      </header>
+
     <!-- main content area for task columns. -->
     <div class="bg-[#E4EBFA] h-full">
         <main class="p-3 flex flex-col xl:flex">

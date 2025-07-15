@@ -8,9 +8,9 @@
     <title>My KanBan Tracker</title>
   </head>
 
-<body class="h-screen overflow-hidden"> <!-- Set full viewport height and prevent scrolling -->
-  <div class="flex flex-col xl:flex-row h-full">
-    <!-- Sidebar - Now visible on mobile with toggle functionality -->
+  <body class="h-screen overflow-hidden"> <!-- Set full viewport height and prevent scrolling -->
+    <div class="flex flex-col xl:flex-row h-full">
+      <!-- Sidebar - Now visible on mobile with toggle functionality -->
       <div class="w-full xl:w-[300px] bg-white border-r border-[#E4EBFA] xl:h-screen flex-shrink-0">
         <div class="p-8">
           <img class="h-[26px] w-[153px] xl:mb-[52px]" src="https://raw.githubusercontent.com/CodeSpace-Academy/JSL01-2025/6f88031913c1c439221f03a3afbbad251bd5e0eb/assets/logo-light.svg" alt="Kanban logo"/>
@@ -37,70 +37,70 @@
         </div>
       </div>
 
-    <!-- Main Layout: Header with board title, add task button, and main content area for task columns. -->
-    <!-- Create the top Header Layer -->
-    <div class="flex-1 flex flex-col overflow-hidden">
-      <!-- Header -->
-      <header class="hidden xl:block bg-white border-b border-[#E4EBFA] p-6">
-        <div class="flex justify-between items-center">
-          <h2 class="font-plus-jakarta-sans font-bold text-2xl">Launch Career</h2>
-          
-          <!-- Add Task Button - Now properly visible -->
-          <!-- <button class="flex items-center justify-center bg-purple-500 hover:bg-purple-600 text-white font-medium py-3 px-4 rounded-full transition-colors">
-            <svg class="h-4 w-4 text-white" clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-              <path d="m11 11h-7.25c-.414 0-.75.336-.75.75s.336.75.75.75h7.25v7.25c0 .414.336.75.75.75s.75-.336.75-.75v-7.25h7.25c.414 0 .75-.336.75-.75s-.336-.75-.75-.75h-7.25v-7.25c0-.414-.336-.75-.75-.75s-.75.336-.75.75z" fill="currentColor"/>
-            </svg>
-            <span class="ml-2">Add New Task</span>
-            </button> -->
-        </div>
-      </header>
-
-    <!-- main content area for task columns. -->
-    <div class="bg-[#E4EBFA] h-full">
-        <main class="p-3 flex flex-col xl:flex">
-          <!-- Task Columns: Display tasks grouped by status (TODO, DOING, DONE). -->
-          <div class="flex flex-col mb-4">
-            <div class="flex justify-start items-center mt-2 font-plus-jakarta-sans text-[#828FA3] font-bold not-italic text-xs leading-[100%] tracking-[2.4px]">
-              <span>🔵</span>
-              <h4 class="ml-1">TODO</h4>
-              <span class="ml-2">(4)</span>
-            </div>
-            <!-- Tasks container for TODO -->
-            <div class="flex flex-col font-bold text-[15px] leading-[100%] tracking-[0px] rotate-0 opacity-100 ml-4 mt-2">
-              <div class="mt-4 py-5 px-3 w-[320px] xl:w-[280px] h-[60px] bg-white rounded-lg shadow-[0px_4px_6px_0px_rgba(54,78,126,0.1)] transition-all hover:shadow-md">Launch Epic Career 🚀</div>
-              <div class="mt-4 py-5 px-3 w-[320px] xl:w-[280px] h-[60px] bg-white rounded-lg shadow-[0px_4px_6px_0px_rgba(54,78,126,0.1)] transition-all hover:shadow-md">Conquer React ⚛️</div>
-              <div class="mt-4 py-5 px-3 w-[320px] xl:w-[280px] h-[60px] bg-white rounded-lg shadow-[0px_4px_6px_0px_rgba(54,78,126,0.1)] transition-all hover:shadow-md">Understand Databases ⚙️</div>
-              <div class="mt-4 py-5 px-3 w-[320px] xl:w-[280px] h-[60px] bg-white rounded-lg shadow-[0px_4px_6px_0px_rgba(54,78,126,0.1)] transition-all hover:shadow-md">Crush Frameworks 🖼️</div>
-            </div>
+      <!-- Main Layout: Header with board title, add task button, and main content area for task columns. -->
+      <!-- Create the top Header Layer -->
+      <div class="flex-1 flex flex-col overflow-hidden">
+        <!-- Header -->
+        <header class="hidden xl:block bg-white border-b border-[#E4EBFA] p-6">
+          <div class="flex justify-between items-center">
+            <h2 class="font-plus-jakarta-sans font-bold text-2xl">Launch Career</h2>
+            
+            <!-- Add Task Button - Now properly visible -->
+            <!-- <button class="flex items-center justify-center bg-purple-500 hover:bg-purple-600 text-white font-medium py-3 px-4 rounded-full transition-colors">
+              <svg class="h-4 w-4 text-white" clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="m11 11h-7.25c-.414 0-.75.336-.75.75s.336.75.75.75h7.25v7.25c0 .414.336.75.75.75s.75-.336.75-.75v-7.25h7.25c.414 0 .75-.336.75-.75s-.336-.75-.75-.75h-7.25v-7.25c0-.414-.336-.75-.75-.75s-.75.336-.75.75z" fill="currentColor"/>
+              </svg>
+              <span class="ml-2">Add New Task</span>
+              </button> -->
           </div>
-          <!-- DOING Column -->
-          <div class="flex flex-col mb-4">
-            <div class="flex justify-start items-center mt-2 font-plus-jakarta-sans text-[#828FA3] font-bold not-italic text-xs leading-[100%] tracking-[2.4px]">
-              <span>🟠</span>
-              <h4 class="ml-1">DOING</h4>
-              <span class="ml-2">(2)</span>
-            </div>
-              <!-- Tasks container for DOING -->
-              <div class="flex flex-col font-bold text-[15px] leading-[100%] tracking-[0px] rotate-0 opacity-100 ml-4 mt-2">
-                <div class="mt-4 py-5 px-3 w-[320px] xl:w-[280px] h-[60px] bg-white rounded-lg shadow-[0px_4px_6px_0px_rgba(54,78,126,0.1)] transition-all hover:shadow-md">Master JavaScript 💛</div>
-                <div class="mt-4 py-5 px-3 w-[320px] xl:w-[280px] h-[60px] bg-white rounded-lg shadow-[0px_4px_6px_0px_rgba(54,78,126,0.1)] transition-all hover:shadow-md">Keep on Going 🏆</div>
-              </div>
-            </div>
-            <!-- DONE Column -->
-            <div class="flex flex-col mb-4">
-              <div class="flex justify-start items-center mt-2 font-plus-jakarta-sans text-[#828FA3] font-bold not-italic text-xs leading-[100%] tracking-[2.4px]">
-                <span class=>🟢</span>
-                <h4 class="ml-1">DONE</h4>
-                <span class="ml-2">(2)</span>
-              </div>
-              <!-- Tasks container for DONE -->
-              <div class="flex flex-col font-bold text-[15px] leading-[100%] tracking-[0px] rotate-0 opacity-100 ml-4 mt-2">
-                <div class="mt-4 py-5 px-3 w-[320px] xl:w-[280px] h-[60px] bg-white rounded-lg shadow-[0px_4px_6px_0px_rgba(54,78,126,0.1)] transition-all hover:shadow-md">Contribute to Open Source Projects 🌐</div>
-                <div class="mt-4 py-5 px-3 w-[320px] xl:w-[280px] h-[60px] bg-white rounded-lg shadow-[0px_4px_6px_0px_rgba(54,78,126,0.1)] transition-all hover:shadow-md">Build Portfolio Projects 🛠️</div>
-              </div>
-            </div>
-        </main>
+        </header>
       </div>
+      <!-- main content area for task columns. -->
+      <main class="flex-1 overflow-auto p-4 bg-[#F4F7FD] xl:flex">
+        <!-- Task columns would be rendered here -->
+        <div class="flex flex-col xl:flex mb-4">
+          <div class="flex justify-start items-center mt-2 font-plus-jakarta-sans text-[#828FA3] font-bold not-italic text-xs leading-[100%] tracking-[2.4px]">
+            <span>🔵</span>
+            <h4 class="ml-1">TODO</h4>
+            <span class="ml-2">(4)</span>
+          </div>
+          <!-- Tasks container for TODO -->
+          <ul class="flex flex-col font-bold text-[15px] leading-[100%] tracking-[0px] rotate-0 opacity-100 ml-2 mt-2">
+            <li class="mt-4 py-5 px-3 mr-2 w-max-[320px] xl:w-[280px] h-[60px] bg-white rounded-lg shadow-[0px_4px_6px_0px_rgba(54,78,126,0.1)] transition-all hover:shadow-md">Launch Epic Career 🚀</li>
+            <li class="mt-4 py-5 px-3 mr-2 w-max-[320px] xl:w-[280px] h-[60px] bg-white rounded-lg shadow-[0px_4px_6px_0px_rgba(54,78,126,0.1)] transition-all hover:shadow-md">Conquer React ⚛️</li>
+            <li class="mt-4 py-5 px-3 mr-2 w-max-[320px] xl:w-[280px] h-[60px] bg-white rounded-lg shadow-[0px_4px_6px_0px_rgba(54,78,126,0.1)] transition-all hover:shadow-md">Understand Databases ⚙️</li>
+            <li class="mt-4 py-5 px-3 mr-2 w-max-[320px] xl:w-[280px] h-[60px] bg-white rounded-lg shadow-[0px_4px_6px_0px_rgba(54,78,126,0.1)] transition-all hover:shadow-md">Crush Frameworks 🖼️</li>
+          </ul>
+        </div>
+
+        <!-- DOING Column -->
+        <div class="flex flex-col mb-4">
+          <div class="flex justify-start items-center mt-2 font-plus-jakarta-sans text-[#828FA3] font-bold not-italic text-xs leading-[100%] tracking-[2.4px]">
+            <span>🟣</span>
+            <h4 class="ml-1">DOING</h4>
+            <span class="ml-2">(2)</span>
+          </div>
+          <!-- Tasks container for DOING -->
+          <ul class="flex flex-col font-bold text-[15px] leading-[100%] tracking-[0px] rotate-0 opacity-100 ml-2 mt-2">
+            <li class="mt-4 py-5 px-3 mr-2 w-max-[320px] xl:w-[280px] h-[60px] bg-white rounded-lg shadow-[0px_4px_6px_0px_rgba(54,78,126,0.1)] transition-all hover:shadow-md">Master JavaScript 💛</li>
+            <li class="mt-4 py-5 px-3 mr-2 w-max-[320px] xl:w-[280px] h-[60px] bg-white rounded-lg shadow-[0px_4px_6px_0px_rgba(54,78,126,0.1)] transition-all hover:shadow-md">Keep on Going 🏆</li>
+          </ul>
+        </div>
+                  
+        <!-- DONE Column -->
+        <div class="flex flex-col mb-4">
+          <div class="flex justify-start items-center mt-2 font-plus-jakarta-sans text-[#828FA3] font-bold not-italic text-xs leading-[100%] tracking-[2.4px]">
+            <span>🟢</span>
+            <h4 class="ml-1">DONE</h4>
+            <span class="ml-2">(2)</span>
+          </div>
+          <!-- Tasks container for DONE -->
+          <ul class="flex flex-col font-bold text-[15px] leading-[100%] tracking-[0px] rotate-0 opacity-100 ml-2 mt-2">
+            <li class="mt-4 py-5 px-3 mr-2 w-max-[320px] xl:w-[280px] h-[60px] bg-white rounded-lg shadow-[0px_4px_6px_0px_rgba(54,78,126,0.1)] transition-all hover:shadow-md">Explore ES6 Features 🚀</li>
+            <li class="mt-4 py-5 px-3 mr-2 w-max-[320px] xl:w-[280px] h-[60px] bg-white rounded-lg shadow-[0px_4px_6px_0px_rgba(54,78,126,0.1)] transition-all hover:shadow-md">Build Portfolio Projects 🛠️</li>
+          </ul>
+        </div>
+      </main>
     </div>
   </body>
 </html>
